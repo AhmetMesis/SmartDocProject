@@ -1,4 +1,4 @@
-\# 📄 SmartDoc - Akıllı Doküman Analiz ve Yönetim Platformu
+# 📄 SmartDoc - Akıllı Doküman Analiz ve Yönetim Platformu
 
 
 
