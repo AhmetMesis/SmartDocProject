@@ -5,9 +5,9 @@
 ![Docker](https://img.shields.io/badge/Docker-Enabled-blue?style=for-the-badge&logo=docker)
 ![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-red?style=for-the-badge&logo=streamlit)
 
-**Akıllı Doküman Analiz Platformu**, görüntü işleme (OpenCV), optik karakter tanıma (OCR) ve üretken yapay zeka (Google Gemini AI) teknolojilerini birleştiren bütünleşik bir doküman yönetim çözümüdür[cite: 289, 294].
+**Akıllı Doküman Analiz Platformu**, görüntü işleme (OpenCV), optik karakter tanıma (OCR) ve üretken yapay zeka (Google Gemini AI) teknolojilerini birleştiren bütünleşik bir doküman yönetim çözümüdür.
 
-Bu proje, fiziksel dokümanları (fatura, fiş, kimlik, ders notu vb.) sadece dijitalleştirmekle kalmaz; onları anlamlandırır, özetler ve aranabilir veri haline getirir[cite: 292, 295].
+Bu proje, fiziksel dokümanları (fatura, fiş, kimlik, ders notu vb.) sadece dijitalleştirmekle kalmaz; onları anlamlandırır, özetler ve aranabilir veri haline getirir.
 
 ---
 
@@ -15,25 +15,25 @@ Bu proje, fiziksel dokümanları (fatura, fiş, kimlik, ders notu vb.) sadece di
 
 Proje, modern mikroservis mimarisine uygun olarak 4 ana modülden oluşur:
 
-* **📷 Akıllı Tarayıcı (Scanner):** OpenCV kullanarak yamuk çekilmiş fotoğrafların perspektifini düzeltir, gürültüleri temizler ve tarayıcı kalitesine getirir[cite: 308].
-* **📝 OCR (Metin Tanıma):** Tesseract-OCR motoru ile doküman üzerindeki Türkçe ve İngilizce metinleri %90+ doğrulukla dijital metne dönüştürür[cite: 309].
+* **📷 Akıllı Tarayıcı (Scanner):** OpenCV kullanarak yamuk çekilmiş fotoğrafların perspektifini düzeltir, gürültüleri temizler ve tarayıcı kalitesine getirir.
+* **📝 OCR (Metin Tanıma):** Tesseract-OCR motoru ile doküman üzerindeki Türkçe ve İngilizce metinleri %90+ doğrulukla dijital metne dönüştürür.
 * **🧠 Yapay Zeka Analizi (Gemini AI):** Google Gemini 1.5 Flash modelini kullanarak belgenin türünü (Fatura, Reçete, Sözleşme vb.) tespit eder, içeriğini özetler ve kritik verileri (Tarih, Tutar) çıkarır.
 * **🔲 QR Kod Yönetimi (Çift Yönlü):**
-    * **Okuma:** Görseldeki QR kodları tespit eder ve içeriğini (URL, WiFi, vCard) analiz eder[cite: 310].
-    * **Oluşturma:** İstediğiniz metin veya linkten anında QR kod üretir[cite: 299].
-* **🐳 Dockerize Yapı:** Tüm bağımlılıklar (Tesseract, System Libraries) Docker konteyner yapısında paketlenmiştir, "her yerde çalışır" prensibine uygundur[cite: 312, 330].
+    * **Okuma:** Görseldeki QR kodları tespit eder ve içeriğini (URL, WiFi, vCard) analiz eder.
+    * **Oluşturma:** İstediğiniz metin veya linkten anında QR kod üretir.
+* **🐳 Dockerize Yapı:** Tüm bağımlılıklar (Tesseract, System Libraries) Docker konteyner yapısında paketlenmiştir, "her yerde çalışır" prensibine uygundur.
 
 ---
 
 ## 🛠️ Teknolojiler
 
-* **Backend:** Python, FastAPI, Uvicorn[cite: 311, 327].
+* **Backend:** Python, FastAPI, Uvicorn.
 * **Frontend:** Streamlit.
-* **Görüntü İşleme:** OpenCV, NumPy, Pillow[cite: 319].
-* **OCR:** Tesseract-OCR, Pytesseract[cite: 323].
-* **Yapay Zeka:** Google Generative AI (Gemini 1.5 Flash).
-* **QR İşlemleri:** Pyzbar, Qrcode[cite: 325].
-* **Dağıtım:** Docker, Docker Compose[cite: 330].
+* **Görüntü İşleme:** OpenCV, NumPy, Pillow.
+* **OCR:** Tesseract-OCR, Pytesseract.
+* **Yapay Zeka:** Google Generative AI (Gemini 2.5 Flash).
+* **QR İşlemleri:** Pyzbar, Qrcode.
+* **Dağıtım:** Docker, Docker Compose.
 
 ---
 
