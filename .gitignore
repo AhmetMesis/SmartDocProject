@@ -1,0 +1,47 @@
+# --- GÜVENLİK (EN ÖNEMLİSİ) ---
+.env
+.env.local
+key.pem
+*.key
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- IDE ve Editör Ayarları (Kişisel ayarlar yüklenmemeli) ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- İşletim Sistemi Dosyaları ---
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# --- Proje Çıktıları ve Test Resimleri ---
+# Test ederken oluşan gereksiz resimleri yükleme
+*.jpg
+*.jpeg
+*.png
+*.pdf
+
+# AMA: Rapor için koyduğun ekran görüntülerine izin ver
+!screenshots/*.png
+!screenshots/*.jpg
+!README_assets/
+
+# --- Docker ---
+# Docker hatalarını veya loglarını yükleme
+docker-compose.override.yml
+
+# --- Streamlit ---
+.streamlit/secrets.toml
